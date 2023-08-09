@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("./colors.css");
 @import url("/card.css");
+@import url("/form.css");
 @import url('./inputs.css');
 
 
 
 * {
   font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -253,7 +256,7 @@
     color: var(--cloud);
     font-weight: 600;
     padding: 10px;
-    border-radius: 3%;
+    border-radius: 5px;
     transition: 1s;
 }
 
@@ -313,6 +316,73 @@
 }
 /**
     End of padding
+*/
+
+/**
+    Margin
+*/
+
+.m1 {
+    margin: 1px;
+}
+
+.m2 {
+    margin: 2px;
+}
+
+.m3 {
+    margin: 3px;
+}
+
+.m4 {
+    margin: 4px;
+}
+
+.m5 {
+    margin: 5px;
+}
+
+.mt1 {
+    margin-top: 1px;
+}
+
+.mt2 {
+    margin-top: 2px;
+}
+
+.mt3 {
+    margin-top: 3px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt6 {
+    margin-top: 6px;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt9 {
+    margin-top: 9px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+/**
+End of margin
 */
 
 /**
