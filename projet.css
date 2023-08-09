@@ -1,36 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('./colors');
 @import url('./inputs.css');
-
-/**
-    List of colors
-*/
-:root {
-    --white: #fff;
-    --black: #000;
-    --light: #adcece;
-    --cloud: #ecf0f1;
-    --primary: #3498db;
-    --d-primary: #2980b9;
-    --secondary: #95a5a6;
-    --d-secondary: #7f8c8d;
-    --third: #34495e;
-    --midnight: #2c3e50;
-    --success: #2ecc71;
-    --d-success: #27ae60;
-    --green: #1abc9c;
-    --d-green: #16a085;
-    --warning: #f1c40f;
-    --d-warning: #f39c12;
-    --carrot: #e67e22;
-    --pumpkin: #d35400;
-    --danger: #e74c3c;
-    --d-danger: #c0392b;
-    --purple: #9b59b6;
-    --d-purple: #8e44ad;
-}
-/**
-    End list of color
-*/
 
 * {
   font-family: "Quicksand", sans-serif;
