@@ -1,0 +1,31 @@
+/** Card */
+.card {
+    display: block;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: 0px;
+}
+/** End of card */
+
+.card div {
+    border-bottom: 1px solid var(--light);
+    background-color: var(--light);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.card-dark {
+    display: block;
+    border: 1px solid var(--light);
+    background-color: var(--third);
+    border-radius: 5px;
+    padding: 0px;
+    color: var(--cloud);
+}
+
+.card-dark div {
+    background-color: var(--midnight);
+    color: var(--cloud);
+    font-weight: bold;
+    padding: 5px;
+}
