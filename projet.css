@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url('./inputs.css');
+
+/**
+    List of colors
+*/
+:root {
+    --white: #fff;
+    --black: #000;
+    --light: #adcece;
+    --cloud: #ecf0f1;
+    --primary: #3498db;
+    --d-primary: #2980b9;
+    --secondary: #95a5a6;
+    --d-secondary: #7f8c8d;
+    --third: #34495e;
+    --midnight: #2c3e50;
+    --success: #2ecc71;
+    --d-success: #27ae60;
+    --green: #1abc9c;
+    --d-green: #16a085;
+    --warning: #f1c40f;
+    --d-warning: #f39c12;
+    --carrot: #e67e22;
+    --pumpkin: #d35400;
+    --danger: #e74c3c;
+    --d-danger: #c0392b;
+    --purple: #9b59b6;
+    --d-purple: #8e44ad;
+}
+/**
+    End list of color
+*/
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+
+/**
+    Managing of font size
+*/
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+/**
+    End of Managing size
+*/
+
+/**
+    Buttons
+    */
+.btn {
+    border: none;
+    padding: 5px;
+    transition: .5s;
+    font-weight: 500;
+}
+
+.btn-primary {
+    border: none;
+    background-color: var(--d-primary);
+    color: var(--cloud);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+.btn-o-primary {
+    border: 1px solid var(--primary);
+    background: none;
+    color: var(--d-primary);
+}
+
+.btn-o-primary:hover {
+    border: none;
+    background-color: var(--d-primary);
+    color: white;
+}
+
+.btn-success {
+    border: none;
+    background-color: var(--d-success);
+    color: var(--cloud);
+}
+
+.btn-success:hover {
+    background-color: var(--success);
+}
+
+.btn-o-success {
+    border: 1px solid var(--d-success);
+    background: none;
+    color: var(--d-success);
+}
+
+.btn-o-success:hover {
+    border: none;
+    background-color: var(--d-success);
+    color: white;
+}
+
+.btn-green {
+    border: none;
+    background-color: var(--d-green);
+    color: var(--cloud);
+}
+
+.btn-green:hover {
+    background-color: var(--green);
+}
+
+.btn-o-green {
+    border: 1px solid var(--d-green);
+    background: none;
+    color: var(--d-green);
+}
+
+.btn-o-green:hover {
+    border: none;
+    background-color: var(--d-green);
+    color: white;
+}
+
+.btn-warning {
+    border: none;
+    background-color: var(--d-warning);
+    color: var(--midnight);
+}
+
+.btn-warning:hover {
+    background-color: var(--warning);
+}
+
+.btn-o-warning {
+    border: 1px solid var(--d-warning);
+    background: none;
+    color: var(--d-warning)
+}
+
+.btn-o-warning:hover {
+    border: none;
+    background-color: var(--d-warning);
+    color: white;
+}
+
+.btn-danger {
+    border: none;
+    background-color: var(--d-danger);
+    color: var(--cloud);
+}
+
+.btn-danger:hover {
+    background-color: var(--danger);
+}
+
+.btn-o-danger {
+    border: 1px solid var(--d-danger);
+    background: none;
+    color: var(--d-danger)
+}
+
+.btn-o-danger:hover {
+    border: none;
+    background-color: var(--d-danger);
+    color: white;
+}
+
+.btn-amethyst {
+    border: none;
+    background-color: var(--d-purple);
+    color: var(--cloud);
+}
+
+.btn-amethyst:hover {
+    background-color: var(--purple);
+}
+
+.btn-o-amethyst {
+    border: 1px solid var(--d-purple);
+    background: none;
+    color: var(--d-purple)
+}
+
+.btn-o-amethyst:hover {
+    border: none;
+    background-color: var(--d-purple);
+    color: white;
+}
+
+.btn-dark {
+    border: none;
+    background-color: var(--midnight);
+    color: var(--cloud);
+}
+
+.btn-dark:hover {
+    background-color: var(--third);
+}
+
+.btn-o-dark {
+    border: 1px solid var(--midnight);
+    background: none;
+    color: var(--midnight);
+}
+
+.btn-o-dark:hover {
+    border: none;
+    background-color: var(--midnight);
+    color: white;
+}
+
+.btn-secondary {
+    border: none;
+    background-color: var(--d-secondary);
+    color: var(--cloud);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary);
+}
+
+.btn-o-secondary {
+    border: 1px solid var(--d-secondary);
+    background: none;
+    color: var(--d-secondary);
+}
+
+.btn-o-secondary:hover {
+    border: none;
+    background-color: var(--d-secondary);
+    color: white;
+}
+
+.btn-orange {
+    border: none;
+    background-color: var(--pumpkin);
+    color: var(--cloud);
+}
+
+.btn-orange:hover {
+    background-color: var(--carrot);
+}
+
+.btn-o-orange {
+    border: 1px solid var(--pumpkin);
+    background: none;
+    color: var(--pumpkin);
+}
+
+.btn-o-orange:hover {
+    border: none;
+    background-color: var(--pumpkin);
+    color: white;
+}
+
+.validation {
+    border: none;
+    display: block;
+    background-color: var(--d-green);
+    color: var(--cloud);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3%;
+    transition: 1s;
+}
+
+.validation:hover {
+    background-color: var(--green);
+    font-weight: 700;
+}
+
+.reset {
+    border: none;
+    display: block;
+    background-color: var(--d-danger);
+    color: var(--cloud);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3%;
+    transition: 1s;
+}
+
+.reset:hover {
+    background-color: var(--danger);
+    font-weight: 700;
+}
+
+.rounded {
+    border-radius: 5%;
+}
+.rounded-10 {
+    border-radius: 10%;
+}
+
+/**
+    End buttons
+*/
+
+/**
+    Padding
+*/
+.p1 {
+    padding: 1px;
+}
+
+.p2 {
+    padding: 2px;
+}
+
+.p3 {
+    padding: 3px;
+}
+
+.p4 {
+    padding: 4px;
+}
+
+.p5 {
+    padding: 5px;
+}
+/**
+    End of padding
+*/
+
+/**
+    Alert
+*/
+.primary {
+    display: block;
+    font-weight: bold;
+    border: 2px solid var(--primary);
+    background-color: var(--d-primary);
+    border-radius: 5px;
+    color: var(--cloud);
+    padding: 5px 20px;
+}
+
+.success {
+    display: block;
+    font-weight: bold;
+    border: 2px solid var(--success);
+    background-color: var(--d-success);
+    border-radius: 5px;
+    color: var(--cloud);
+    padding: 5px 20px;
+}
+
+.error {
+    display: block;
+    font-weight: bold;
+    border: 2px solid var(--danger);
+    background-color: var(--d-danger);
+    border-radius: 5px;
+    color: var(--cloud);
+    padding: 5px 20px;
+}
+
+.warning {
+    display: block;
+    font-weight: bold;
+    border: 2px solid var(--warning);
+    background-color: var(--d-warning);
+    border-radius: 5px;
+    color: var(--cloud);
+    padding: 5px 20px;
+}
+
+.secondary-warning {
+    display: block;
+    font-weight: bold;
+    border: 2px solid var(--orange);
+    background-color: var(--pumpkin);
+    border-radius: 5px;
+    color: var(--cloud);
+    padding: 5px 20px;
+}
+
+.amethyst {
+    display: block;
+    font-weight: bold;
+    border: 2px solid var(--purple);
+    background-color: var(--d-purple);
+    border-radius: 5px;
+    color: var(--cloud);
+    padding: 5px 20px;
+}
+
+/** End of alert */
+
+/** Card */
+.card {
+    display: block;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: 0px;
+}
+/** End of card */
+
+.card div {
+    border-bottom: 1px solid var(--light);
+    background-color: var(--light);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.card-dark {
+    display: block;
+    border: 1px solid var(--light);
+    background-color: var(--third);
+    border-radius: 5px;
+    padding: 0px;
+    color: var(--cloud);
+}
+
+.card-dark div {
+    background-color: var(--midnight);
+    color: var(--cloud);
+    font-weight: bold;
+    padding: 5px;
+}
