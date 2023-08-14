@@ -1,0 +1,33 @@
+ 
+table {
+    overflow-x: auto;
+    width: 100%;
+    border: 1px solid var(--light);
+    border-collapse: collapse;
+}
+
+table > thead {
+    font-weight: bolder;
+    border-bottom-width: 1px;
+    border-color: var(--light);
+    background-color: var(--cloud);
+}
+
+table > thead:hover {
+    background-color: none;
+}
+
+table th, td {
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--light);
+    padding: 10px;
+}
+
+
+
+table tr:hover {
+    background-color: var(--light);
+    color: var(--cloud);
+}
+
