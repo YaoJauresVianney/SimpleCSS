@@ -1,33 +1,54 @@
- 
 table {
-    overflow-x: auto;
-    width: 100%;
-    border: 1px solid var(--light);
-    border-collapse: collapse;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 table > thead {
-    font-weight: bolder;
-    border-bottom-width: 1px;
-    border-color: var(--light);
-    background-color: var(--cloud);
+  font-weight: bolder;
+  border-bottom-width: 1px;
+  background-color: var(--cloud);
 }
 
 table > thead:hover {
-    background-color: none;
+  background-color: none;
 }
 
-table th, td {
-    text-align: left;
-    vertical-align: middle;
-    border-bottom: 1px solid var(--light);
-    padding: 10px;
+table th,
+td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 10px;
 }
-
-
 
 table tr:hover {
-    background-color: var(--light);
-    color: var(--cloud);
+  background-color: var(--light);
+  color: var(--cloud);
+  
+  transition: all .5s;
 }
 
+/**
+  table primary
+*/
+
+table.table-primary > thead {
+  background-color: var(--d-primary);
+}
+
+table.table-primary tr:hover {
+  background-color: var(--primary);
+}
+
+
+/**
+  table midnight
+*/
+table.table-midnight > thead {
+  background-color: var(--midnight);
+  color: white;
+}
+
+table.table-midnight tr:hover {
+  background-color: var(--third);
+}

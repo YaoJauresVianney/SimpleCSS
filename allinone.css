@@ -1,10 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("./colors.css");
-@import url("/card.css");
-@import url("/form.css");
-@import url("./inputs.css");
-@import url("/table.css");
-@import url("/list.css");
+
+/**
+    List of colors
+*/
+:root {
+    --white: #fff;
+    --black: #000;
+    --light: #adcece;
+    --cloud: #ecf0f1;
+    --primary: #3498db;
+    --d-primary: #2980b9;
+    --secondary: #95a5a6;
+    --d-secondary: #7f8c8d;
+    --third: #34495e;
+    --midnight: #2c3e50;
+    --success: #2ecc71;
+    --d-success: #27ae60;
+    --green: #1abc9c;
+    --d-green: #16a085;
+    --warning: #f1c40f;
+    --d-warning: #f39c12;
+    --carrot: #e67e22;
+    --pumpkin: #d35400;
+    --danger: #e74c3c;
+    --d-danger: #c0392b;
+    --purple: #9b59b6;
+    --d-purple: #8e44ad;
+}
+/**
+    End list of color
+*/
 
 * {
   font-family: "Quicksand", sans-serif;
@@ -450,3 +475,332 @@ End of margin
 }
 
 /** End of alert */
+
+table {
+    overflow-x: auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table > thead {
+    font-weight: bolder;
+    border-bottom-width: 1px;
+    background-color: var(--cloud);
+  }
+  
+  table > thead:hover {
+    background-color: none;
+  }
+  
+  table th,
+  td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  
+  table tr:hover {
+    background-color: var(--light);
+    color: var(--cloud);
+    font-weight: bold;
+    
+    transition: all .5s;
+  }
+  
+  /**
+    table primary
+  */
+  
+  table.table-primary > thead {
+    background-color: var(--d-primary);
+  }
+  
+  table.table-primary tr:hover {
+    background-color: var(--primary);
+    font-weight: bold;
+  }
+  
+  
+  /**
+    table midnight
+  */
+  table.table-midnight > thead {
+    background-color: var(--midnight);
+    color: white;
+  }
+  
+  table.table-midnight tr:hover {
+    background-color: var(--third);
+    font-weight: bold;
+  }
+
+  /** List */
+ul {
+    margin: 15px;
+}
+
+.numbers {
+    list-style-type: decimal;
+}
+
+.uroman {
+    list-style-type:upper-roman;
+}
+
+.lroman {
+    list-style-type: lower-roman;
+}
+
+/** End list */
+
+/** Inputs */
+input[type=submit] {
+    border: none;
+    display: block;
+    background-color: var(--d-green);
+    color: var(--cloud);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3%;
+    transition: 1s;
+}
+
+input[type=submit]:hover {
+    background-color: var(--green);
+    font-weight: 700;
+}
+
+input[type=reset]{
+    border: none;
+    display: block;
+    background-color: var(--d-danger);
+    color: var(--cloud);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3%;
+    transition: 1s;
+}
+
+input[type=reset]:hover {
+    background-color: var(--danger);
+    font-weight: 700;
+}
+
+input[type=button] {
+    border: none;
+    display: block;
+    background-color: var(--d-primary);
+    color: var(--cloud);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3%;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19)s;
+}
+
+input[type=button]:hover {
+    background-color: var(--primary);
+    font-weight: 700;
+}
+/**
+input[type=checkbox] {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #000;
+    accent-color: var(--d-green);
+}
+
+input[type=radio] {
+    width: 25px;
+    height: 25px;
+    accent-color: var(--d-green);
+}
+
+input[type=checkbox] {
+    border: 1px solid var(--cloud);
+    border-radius: 5%;
+}
+*/
+
+input[type=checkbox] {
+  appearance: none;
+  height: .35em;
+  width: 2em;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type=checkbox]:before {
+  position: absolute;
+  content: '';
+  background-color: #757575;
+  height: 1em;
+  width: 1em;
+  top: -0.30em;
+  left: 0.2em;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+input[type=checkbox]:checked {
+  background-color: #b3e5fc;
+}
+
+input[type=checkbox]:checked:before {
+  background-color: #0d47a1;
+  left: .8em;
+}
+
+input[type=date], 
+input[type=datetime-local], 
+input[type=email],
+input[type=file],
+input[type=month],
+input[type=password],
+input[type=number],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+input[type=time],
+input[type=week] {
+    border: 1px solid var(--d-secondary);
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px;
+    color: var(--midnight);
+}
+
+input[type=range] {
+    accent-color: var(--green);
+    padding: 0;
+    outline: none;
+    opacity: .8;
+    box-sizing: border-box;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+
+
+/** End inputs */
+
+/**
+    Form style
+*/
+
+.card form {
+    padding: 15px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin: 10px 0px;
+}
+
+
+@media only screen and (max-width: 1080px)  {
+    .card form input[type=submit] {
+        display: block;
+        width: 100%;
+        margin: 5px;
+    }
+    .card form input, label {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
+
+/** End Form style */
+
+/** Card */
+.card {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: 0px;
+    transition: 1s;
+}
+
+
+.card div {
+    border-bottom: 1px solid var(--light);
+    background-color: var(--light);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.card-dark {
+    display: block;
+    border: 1px solid var(--light);
+    background-color: var(--third);
+    border-radius: 5px;
+    padding: 0px;
+    color: var(--cloud);
+}
+
+.card-dark div {
+    background-color: var(--midnight);
+    color: var(--cloud);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.card-collapsed {
+    display: none;
+    transition: 1s;
+}
+/** End of card */
+
+/** Link styles */
+a {
+  color: var(--d-primary);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 1s;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+.link-1 {
+  color: var(--midnight);
+  transition: all 1s;
+}
+
+.link-1:hover {
+  color: var(--third);
+  text-decoration-line: underline;;
+}
+
+.link-2 {
+  color: var(--d-green);
+  text-decoration: none;
+}
+
+.link-2:hover {
+  color: var(--green);
+  text-decoration-line: underline;
+}
+
+.link-3 {
+  color: var(--d-secondary);
+}
+
+.link-3:hover {
+  color: var(--secondary);
+  text-decoration-line: underline;
+}
+/** End link */

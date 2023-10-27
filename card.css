@@ -6,7 +6,7 @@
     border-radius: 5px;
     padding: 0px;
 }
-/** End of card */
+
 
 .card div {
     border-bottom: 1px solid var(--light);
@@ -30,3 +30,4 @@
     font-weight: bold;
     padding: 5px;
 }
+/** End of card */
